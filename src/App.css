@@ -28,3 +28,8 @@ a{
 .my-10{
   margin-top: 10px;
 }
+@media screen and (max-width: 680px) {
+    .col{
+      width: 97%;
+    }
+}

@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../images/Hawks.png";
 import "./Sidebarbar.css";
 import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = ({ children }) => {
+  const [sidebar, openSidebar] = useState(false);
+  const handleSideBar = (sidebar) => {
+    openSidebar(!sidebar);
+  };
   const location = useLocation().pathname;
   return (
     <div className="">
-      <div className="sidebar">
+      <div
+        class={`open-container ${sidebar ? "d-none":''}`}
+        onClick={() => handleSideBar(sidebar)}
+      >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div className={`sidebar ${sidebar ? "show":""}`}>
+        <div
+          class={`close-container ${sidebar && "change"}`}
+          onClick={() => handleSideBar(sidebar)}
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <div>
           <img src={Logo} alt="LOGO" />
         </div>
