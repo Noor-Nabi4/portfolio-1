@@ -5,7 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = ({ children }) => {
   const [sidebar, openSidebar] = useState(false);
-  const handleSideBar = (sidebar) => {
+  const handleLink=()=>{
+    openSidebar(false);
+  }
+  const handleSideBar = () => {
     openSidebar(!sidebar);
   };
   const location = useLocation().pathname;
@@ -13,7 +16,7 @@ const Sidebar = ({ children }) => {
     <div className="">
       <div
         class={`open-container ${sidebar ? "d-none" : ""}`}
-        onClick={() => handleSideBar(sidebar)}
+        onClick={() => handleSideBar()}
       >
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -22,7 +25,7 @@ const Sidebar = ({ children }) => {
       <div className={`sidebar ${sidebar ? "show" : ""}`}>
         <div
           class={` ${sidebar ? "change" : ""} close-container`}
-          onClick={() => handleSideBar(sidebar)}
+          onClick={() => handleSideBar()}
         >
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -34,7 +37,7 @@ const Sidebar = ({ children }) => {
         <Link
           to="/"
           className={location === "/" ? "active" : ""}
-          onClick={() => handleSideBar(sidebar)}
+          onClick={() => handleLink()}
         >
           <svg
             width="30"
@@ -66,7 +69,7 @@ const Sidebar = ({ children }) => {
         <Link
           to="/about"
           className={location === "/about" ? "active" : ""}
-          onClick={() => handleSideBar(sidebar)}
+          onClick={() => handleLink()}
         >
           <svg
             width="30"
@@ -99,7 +102,7 @@ const Sidebar = ({ children }) => {
         <Link
           to="/work"
           className={location === "/work" ? "active" : ""}
-          onClick={() => handleSideBar(sidebar)}
+          onClick={() => handleLink()}
         >
           <svg
             width="30"
