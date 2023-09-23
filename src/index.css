@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-family: 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  background-color: #3c3c5b;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.f-20 {
+  font-size: 1.25rem;
+}
+
+.verticle-120 {
+  padding: 120px 0;
+}
+
+.m-20 {
+  margin-bottom: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.ml-240 {
+  margin-left: 15rem;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-48 {
+  font-size: 48px;
+}
+
+.f-26 {
+  font-size: 1.625rem;
+}
+
+.p-16 {
+  padding: 1rem;
+}
+
+.py-120 {
+  padding: 120px 0;
+
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.f-32 {
+  font-weight: 2rem;
+}
+
+.f-24 {
+  font-size: 1.5rem;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+.ph-64{
+  padding: 0 4rem;
+}

@@ -1,0 +1,30 @@
+a{
+  text-decoration: none;
+}
+.nakia-blue {
+  color: #1DFF9E;
+  font-weight: bold;
+}
+
+.grey-white {
+  color: #7b7b90;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  width: 47%;
+  margin-right:3% ;
+}
+
+.col.one {
+  padding: 7.5rem 1rem 7.5rem 0;
+}
+.my-10{
+  margin-top: 10px;
+}

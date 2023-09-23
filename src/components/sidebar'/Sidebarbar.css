@@ -1,0 +1,30 @@
+.sidebar {
+    position:absolute;
+    text-align: center;
+    background-color: #2E2E47;
+    width: 15rem;
+    position: fixed;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar>a {
+    padding: 0 16px;
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.sidebar>a.active{
+    background: #464567;
+    border-radius: 1rem;
+
+}
+.sidebar>a>span{
+    margin-left: 1rem;
+}

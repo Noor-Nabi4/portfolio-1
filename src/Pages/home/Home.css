@@ -1,0 +1,41 @@
+.container {
+    padding: 4rem 2rem;
+}
+
+.welcome-message {}
+
+
+.welcome-message>p {}
+
+.short-description {
+    padding-top: 120px;
+    margin: 16px 0;
+}
+
+.short-description>p {}
+
+.mail-btn {
+    align-items: center;
+    display: inline-flex;
+    background-color: #464567;
+    border: none;
+    border-radius: 12px;
+}
+
+.line {
+    width: 100%;
+    border: 1px solid #828282;
+}
+
+.m-h-8 {
+    margin: 0 0.5rem;
+}
+
+.social>button {
+
+    margin: 0 5px;
+    background-color: #464567;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
