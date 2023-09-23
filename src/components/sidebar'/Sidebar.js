@@ -12,16 +12,16 @@ const Sidebar = ({ children }) => {
   return (
     <div className="">
       <div
-        class={`open-container ${sidebar ? "d-none":''}`}
+        class={`open-container ${sidebar ? "d-none" : ""}`}
         onClick={() => handleSideBar(sidebar)}
       >
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <div className={`sidebar ${sidebar ? "show":""}`}>
+      <div className={`sidebar ${sidebar ? "show" : ""}`}>
         <div
-          class={` ${sidebar ? "change":""} close-container`}
+          class={` ${sidebar ? "change" : ""} close-container`}
           onClick={() => handleSideBar(sidebar)}
         >
           <div class="bar1"></div>
@@ -31,7 +31,11 @@ const Sidebar = ({ children }) => {
         <div>
           <img src={Logo} alt="LOGO" />
         </div>
-        <Link to="/" className={location === "/" ? "active" : ""}>
+        <Link
+          to="/"
+          className={location === "/" ? "active" : ""}
+          onClick={() => handleSideBar(sidebar)}
+        >
           <svg
             width="30"
             height="48"
@@ -59,7 +63,11 @@ const Sidebar = ({ children }) => {
           </svg>
           <span>Home</span>
         </Link>
-        <Link to="/about" className={location === "/about" ? "active" : ""}>
+        <Link
+          to="/about"
+          className={location === "/about" ? "active" : ""}
+          onClick={() => handleSideBar(sidebar)}
+        >
           <svg
             width="30"
             height="48"
@@ -88,7 +96,11 @@ const Sidebar = ({ children }) => {
 
           <span>About</span>
         </Link>
-        <Link to="/work" className={location === "/work" ? "active" : ""}>
+        <Link
+          to="/work"
+          className={location === "/work" ? "active" : ""}
+          onClick={() => handleSideBar(sidebar)}
+        >
           <svg
             width="30"
             height="48"
