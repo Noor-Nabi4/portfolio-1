@@ -73,13 +73,18 @@
     display: block;
     width: 100%;
 }
-
-@media screen and (max-width: 680px) {
-    .open-container {
-        display: block;
-    }
-    .open-container.d-none{
+.open-container.d-none{
+    display: none!important;
+}
+@media screen and (min-width: 680px) {
+    .close-container{
         display: none;
+    }
+
+}
+@media screen and (max-width: 680px) {
+    .open-container{
+        display: block;
     }
     .sidebar {
         display: none;

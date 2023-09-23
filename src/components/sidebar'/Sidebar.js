@@ -21,7 +21,7 @@ const Sidebar = ({ children }) => {
       </div>
       <div className={`sidebar ${sidebar ? "show":""}`}>
         <div
-          class={`close-container ${sidebar && "change"}`}
+          class={` ${sidebar ? "change":""} close-container`}
           onClick={() => handleSideBar(sidebar)}
         >
           <div class="bar1"></div>
