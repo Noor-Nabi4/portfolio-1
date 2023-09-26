@@ -172,6 +172,21 @@ const Work = () => {
           </p>
           <br />
         </div>
+        <h2 className="fw-regular inline-block f-32">Al Bladi Electronics.</h2>
+        <span className="grey-white f-20"> (7 Months)</span>
+        <br />
+        <br />
+        <div className="company-description">
+          <h3 className="nakia-blue f-24 fw-regular">full stack Developer</h3>
+          <span className="f-16">April 2021 - Dec 2021</span>
+          <p className="f-16">
+            Develops and maintains solar inverter tracking system.
+            <br />
+            Created web applications and mobile application for external use by the
+            user.
+          </p>
+          <br />
+        </div>
         <div className="company-description">
           <h3 className="f-24">Full-Stack Developer</h3>
         </div>
