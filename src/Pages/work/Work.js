@@ -178,7 +178,7 @@ const Work = () => {
         <br />
         <div className="company-description">
           <h3 className="nakia-blue f-24 fw-regular">full stack Developer</h3>
-          <span className="f-16">(April 2021 - Dec 2023)</span>
+          <span className="f-16">April 2021 - Dec 2021</span>
           <p className="f-16">
             Develops and maintains solar inverter tracking system.
             <br />
