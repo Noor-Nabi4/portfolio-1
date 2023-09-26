@@ -39,7 +39,7 @@ function formatDifference(startDate, endDate) {
   return formattedDifference.join(" ");
 }
 const Work = () => {
-  const startDate = new Date("2022-04-05");
+  const startDate = new Date("2021-04-05");
   const endDate = new Date();
   const workingAsFreelancer = formatDifference(startDate, endDate);
 
